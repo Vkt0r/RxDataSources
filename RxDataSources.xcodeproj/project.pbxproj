@@ -25,6 +25,10 @@
 		84FC6BEE1CA4830A00D3C605 /* Example3_TableViewEditing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC6BED1CA4830A00D3C605 /* Example3_TableViewEditing.swift */; };
 		9FF3014E1C4AA6DA007376BD /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF3014C1C4AA6DA007376BD /* RxCocoa.framework */; };
 		9FF301501C4AA6DA007376BD /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF3014D1C4AA6DA007376BD /* RxSwift.framework */; };
+		A3EA1CC520E13163004007CB /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF3014C1C4AA6DA007376BD /* RxCocoa.framework */; };
+		A3EA1CC620E1316F004007CB /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF3014D1C4AA6DA007376BD /* RxSwift.framework */; };
+		A3EA1CC720E1319D004007CB /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF3014C1C4AA6DA007376BD /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A3EA1CC820E1319D004007CB /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF3014D1C4AA6DA007376BD /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A5E035641F0BD55A00EA6BDE /* Example5_UIPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E035631F0BD55A00EA6BDE /* Example5_UIPickerView.swift */; };
 		C8153A501CC6C2F40050C990 /* Example1_CustomizationUsingTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8153A4F1CC6C2F40050C990 /* Example1_CustomizationUsingTableViewDelegate.swift */; };
 		C81FBF461F3B9CED0094061E /* Differentiator.podspec in Resources */ = {isa = PBXBuildFile; fileRef = C81FBF451F3B9CED0094061E /* Differentiator.podspec */; };
@@ -50,10 +54,6 @@
 		C82C3C991F3B939100309AE8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C3C731F3B938C00309AE8 /* Utilities.swift */; };
 		C833338D1F8A5FAC00D46EAE /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C833338C1F8A5FAC00D46EAE /* Deprecated.swift */; };
 		C84043C31F9D33CE0093C3E7 /* ViewTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84043C21F9D33CE0093C3E7 /* ViewTransition.swift */; };
-		C87C34991F363B1400DB85FE /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C87C34321F36346A00DB85FE /* RxSwift.framework */; };
-		C87C349A1F363B1400DB85FE /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C87C34321F36346A00DB85FE /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C87C349D1F363B1400DB85FE /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C87C343A1F36346A00DB85FE /* RxCocoa.framework */; };
-		C87C349E1F363B1400DB85FE /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C87C343A1F36346A00DB85FE /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C87C34A21F363B3000DB85FE /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8984C5A1C36AF35001E4272 /* RxDataSources.framework */; };
 		C87C34A31F363B3000DB85FE /* RxDataSources.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C8984C5A1C36AF35001E4272 /* RxDataSources.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C87DF3461D0219A7006308C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87DF3431D0219A7006308C5 /* AppDelegate.swift */; };
@@ -326,10 +326,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A3EA1CC720E1319D004007CB /* RxCocoa.framework in Embed Frameworks */,
+				A3EA1CC820E1319D004007CB /* RxSwift.framework in Embed Frameworks */,
 				C87C34A31F363B3000DB85FE /* RxDataSources.framework in Embed Frameworks */,
-				C87C349E1F363B1400DB85FE /* RxCocoa.framework in Embed Frameworks */,
 				C82C3C5C1F3B937500309AE8 /* Differentiator.framework in Embed Frameworks */,
-				C87C349A1F363B1400DB85FE /* RxSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,10 +445,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3EA1CC620E1316F004007CB /* RxSwift.framework in Frameworks */,
+				A3EA1CC520E13163004007CB /* RxCocoa.framework in Frameworks */,
 				C87C34A21F363B3000DB85FE /* RxDataSources.framework in Frameworks */,
-				C87C349D1F363B1400DB85FE /* RxCocoa.framework in Frameworks */,
 				C82C3C5B1F3B937500309AE8 /* Differentiator.framework in Frameworks */,
-				C87C34991F363B1400DB85FE /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -839,16 +839,18 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = kzaher;
 				TargetAttributes = {
 					C81905AD1DEA019100AE679C = {
 						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Manual;
 					};
 					C82C3C531F3B937500309AE8 = {
 						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Manual;
 					};
 					C87C345C1F36352600DB85FE = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -857,12 +859,15 @@
 					};
 					C8984C591C36AF35001E4272 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 1000;
 					};
 					C8984C9A1C36B6FA001E4272 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 1000;
 					};
 					C8984CB01C36B723001E4272 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 1000;
 						TestTargetID = C8984C9A1C36B6FA001E4272;
 					};
 				};
@@ -1290,6 +1295,8 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -1299,7 +1306,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.rx.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -1310,6 +1319,8 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -1319,7 +1330,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.rx.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -1331,7 +1344,9 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1340,9 +1355,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.rxswiftcommunity.Differentiator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -1354,7 +1371,9 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1363,9 +1382,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.rxswiftcommunity.Differentiator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -1412,12 +1433,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -1472,12 +1495,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -1534,6 +1559,7 @@
 				PRODUCT_NAME = RxDataSources;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvos appletvsimulator";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -1558,6 +1584,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvos appletvsimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -1576,6 +1603,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kzaher.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1596,6 +1624,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kzaher.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1608,6 +1637,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kzaher.ExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = Example;
 				USES_XCTRUNNER = YES;
 			};
@@ -1622,6 +1652,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kzaher.ExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = Example;
 				USES_XCTRUNNER = YES;
 			};
